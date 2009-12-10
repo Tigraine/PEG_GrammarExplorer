@@ -1185,7 +1185,7 @@ namespace Peg.Samples
         }
     }
     
-    class PegParserGenerator : IParserPostProcessor
+    public class PegParserGenerator : IParserPostProcessor
     {
         
         class CheckGrammar
@@ -1234,6 +1234,11 @@ namespace Peg.Samples
             }
         }
         #region Constructors
+
+        public PegParserGenerator()
+        {
+            
+        }
         #endregion Constructors
         #region IParserPostProcessor functions
         string IParserPostProcessor.ShortDesc { get { return "Create C# parser"; } }

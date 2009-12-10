@@ -50,7 +50,7 @@ namespace Peg.Samples
                         prop_ind_event_block = 281, accessor_declaration = 282, operator_declarator= 283,@operator= 284
                         
             };
-	class PegGrammarParser : PegCharParser
+	public class PegGrammarParser : PegCharParser
     {
         #region abstract PegNode subclass for tree modifying customers
         abstract public class PGParserNode : PegNode
